@@ -175,7 +175,7 @@ export default function BlackbodyApplet() {
           thin-border
           "
         >
-          <div>Temperature (K)</div>
+          <p className="text-sm md:text-lg">Temperature (K)</p>
           <input
             type="number"
             value={temperature.toFixed(2)}
@@ -183,7 +183,7 @@ export default function BlackbodyApplet() {
               const c = Number(e.target.value);
               if (!isNaN(c)) setTemperature(Number(e.target.value));
             }}
-            className="w-auto px-2 py-1 text-center focus:ring:0 focus:border-0"
+            className="w-auto px-2 py-1 text-center text-sm md:text-lg"
           />
         </div>
 
@@ -200,7 +200,7 @@ export default function BlackbodyApplet() {
           thin-border
           "
         >
-          <div>Temperature (°C)</div>
+          <p className="text-sm md:text-lg">Temperature (°C)</p>
           <input
             type="number"
             value={tempC.toFixed(2)}
@@ -208,7 +208,7 @@ export default function BlackbodyApplet() {
               const c = Number(e.target.value);
               if (!isNaN(c)) setTemperature(c + 273.15);
             }}
-            className="w-auto px-2 py-1 text-center focus:ring:0 focus:border-0"
+            className="w-auto px-2 py-1 text-center text-sm md:text-lg"
           />
         </div>
       </div>
