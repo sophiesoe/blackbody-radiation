@@ -1,0 +1,23 @@
+{/* Slider in Kelvin */}
+        {/* <label className="w-full sm:w-2/3">
+          <div className="text-sm mb-1  text-center">
+            Temperature (K): <b>{temperature.toFixed(2)} K</b>
+          </div>
+          <input
+            type="range"
+            min={0}
+            max={10000}
+            step={1}
+            value={temperature}
+            onChange={(e) => setTemperature(Number(e.target.value))}
+            className="w-full accent-blue-600"
+          />
+        </label> */}
+
+
+        
+        {/* Color display */}
+        {/* <div
+          className="w-20 h-12 rounded shadow border"
+          style={{ background: `rgb(${color.r}, ${color.g}, ${color.b})` }}
+        /> */}

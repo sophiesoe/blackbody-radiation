@@ -1,26 +1,33 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000814;
+  color: var(--color-cyan-200);
+  font-family: "Quantico", sans-serif;
+}
+.thin-border {
+  --aug-border-all: 2px;
+  --aug-border-bg: linear-gradient(to bottom right, #00ffffe5, #00a6ff57);
+  /* --aug-inlay-bg: radial-gradient(
+    circle at center,
+    var(--color-slate-900),
+    black
+  ); */
+  --aug-inlay-bg: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.285),
+    var(--color-slate-900)
+  );
+}
+input:focus {
+  border: none;
+  outline: none;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
 }
