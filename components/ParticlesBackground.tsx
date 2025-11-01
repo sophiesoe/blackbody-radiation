@@ -5,7 +5,7 @@ import {
   IOptions,
   RecursivePartial,
 } from "@tsparticles/engine";
-import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
+import { loadSlim } from "@tsparticles/slim";
 
 export default function ParticlesBackground() {
   const [init, setInit] = useState(false);
